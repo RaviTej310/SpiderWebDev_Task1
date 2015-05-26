@@ -85,6 +85,10 @@
 	    background-color:#7FFFD4;
 	 	border-spacing: 0px;
 	 }
+	 .center {
+    margin: 0 auto;
+    width: 20%;
+    }
 	
 </style>
     <meta name="viewport" content="width=device-width; height=device-height; maximum-scale=1.0; initial-scale=1.0; user-scalable=no"/>
@@ -132,7 +136,7 @@ height:1px;
 do my Masters preferably in the U.S. In these four years, I wish to learn more about web and app dev which I have come to realise, interest me the most.
 NOTE: That copyright above is obviously fake :p<p/>
 <br><br><br><br><br><br><br>
-<a href>Goto calculator</a><br><br><br>
+<a href="#calc">Goto calculator</a><br><br><br><br><br>
 <script>
 function call()
 {
@@ -151,11 +155,10 @@ else
 {document.getElementById("input").value+=n;}
 
 }</script>
-<br><br><br><h3>Lollipop Calculator</h3><br><br><br>
-<div align="left">    
-	<input type="text" id="input"><br>
-	<input type="text" id="res">
-	<br>
+<br><br><br><a name="calc"><h3>Lollipop Calculator</h3></a><br><br><br>
+<div class="center">    
+	<div><input type="text" id="input"><br>
+	<input type="text" id="res"></div>
 	<table style="float: left;" id="first">
 
 		<tr>
@@ -199,7 +202,7 @@ else
 	<tr><td id="two" onclick="val('-');">-</td></tr>
 	<tr><td id="adjust" onclick="val('+');">+</td></tr>
 	</table>    	
-<br><br><br><br><br>
+<br><br><br><br><br><br>
 </div>	
 
 </body>
