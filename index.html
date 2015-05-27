@@ -121,6 +121,11 @@ border-color:white;
 background-color:grey;
 height:1px;
 }
+.hr{
+height: 0px;
+border-color:#d3d3d3;
+background-color:#d3d3d3;
+}
 </style>
 </head>
 <body>
@@ -152,7 +157,7 @@ else
 {document.getElementById("input").value+=n;}
 
 }</script>
-<br><br><br><a name="calc"><hr></a><br><br><h3>Lollipop Calculator</h3><br><br><br>
+<br><br><br><br><a name="calc"><hr class="hr"></a><br><br><h3>Lollipop Calculator</h3><br><br><br>
 <div class="center">    
 	<div><input type="text" id="input"><br>
 	<input type="text" id="res"></div>
@@ -199,7 +204,7 @@ else
 	<tr><td id="two" onclick="val('-');">-</td></tr>
 	<tr><td id="adjust" onclick="val('+');">+</td></tr>
 	</table>    	
-<br><br><br>
+<br><br><br><br><br><br><br>
 </div>	
 
 </body>
