@@ -1,188 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
 
-    input#input {
-	   background-color: white;
-       border: 0px solid;
-	   padding-right: 8px;
-	   padding-top: 30px;
-	   padding-bottom: 10px;
-       height: 45px;
-       color: grey;
-	   font-size: 45px;
-	   text-align: right;
-	  }
-    
-    input#res {
-	   background-color: white;
-       border: 0px solid;
-       padding-top: 10px;
-	   padding-bottom: 30px;
-	   padding-right: 8px;
-	   height: 25px;
-       color: #CCC;
-	   font-size: 25px;
-	   text-align: right;
-	  }
-	  
-	 td#one{
-	  	text-align: center;
-	    background-color: #505050;
-	    padding-top:14px;
-		padding-bottom:14px;
-		padding-right:25px;
-		padding-left:25px;
-	    color: white;
-	  }
-	  
-	  td#two{
-	    text-align:center;
-	    background-color: #707070;
-	    padding-top:13px;
-		padding-bottom:13px;
-		padding-right:12px;
-		padding-left:12px;
-	    color: white;   
-	  }
-	  
-	  td#adjust{
-	    text-align:center;
-	    background-color: #707070;
-	    padding-top:13px;
-		padding-right:12px;
-		padding-left:12px;
-	    color: white; 
-	  }
-	  
-	  td#height{
-	    text-align:center;
-	    background-color: #707070;
-	    padding-top:15px;
-		padding-bottom:13px;
-		padding-right:12px;
-		padding-left:12px;
-	    color: white; 
-	  }
-	  
-	 table#first{
-	 	border-spacing: 0px;
-		background-color: #505050;
-		padding-right: 0px;
-	 } 
-	 
-	 table#second{
-	    padding-top: 0px;
-		padding-left: 0px;
-	    padding-bottom: 0px;
-	    padding-right: 16px;
-	    background-color:#7FFFD4;
-	 	border-spacing: 0px;
-	 }
-	 .center {
-    margin: 0 auto;
-	min-width: 255px;
-    width: 15%;
-    }
-	
-</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0;" />
-<style>
-body {
-background-color:#d3d3d3;
-}
-h1 {
-text-align:center;
-font-family:impact;
-}
-h3 {
-text-align:center;
-}
-h4 {
-text-align:center;
-font-family:helvetica;
-}
-h5 {
-text-align:center;
-}
-p {
-text-align:center;
-font-size:15;
-padding-left:25px;
-padding-right:25px;
-}
-hr {
-border-color:white;
-background-color:grey;
-height:1px;
-}
-.hr{
-height: 0px;
-border-color:#d3d3d3;
-background-color:#d3d3d3;
-}
 
-@media screen and (max-width: 600px) {  
-    td#adjust {
-        padding-bottom: 28px;
-    }
-	table#first {
-	padding-bottom: 13px;
-	}
-	input {
-	width: 244px;
-	}
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {  
-    td#adjust {
-        padding-bottom: 28px;
-    }
-	table#first {
-	padding-bottom: 13px;
-	}
-	input {
-	width: 244px;
-	}
-}
-@media screen and (min-width: 800px) and (max-width: 1100px) {   
-    td#adjust {
-        padding-bottom: 23px;
-    }
-	table#first {
-	padding-bottom: 13px;
-	}
-	input {
-	width: 241px;
-	}
-}
+<link type="text/css" rel="stylesheet" href="css_code.css" />
+<script type="text/javascript" src="javascript_code.js"></script>
 
-@media screen and (min-width: 1100px) and (max-width: 1300px) {    
-    td#adjust {
-        padding-bottom: 23px;
-    }
-	table#first {
-	padding-bottom: 13px;
-	}
-	input {
-	width: 241px;
-	}
-}
-@media screen and (min-width: 1300px) and (max-width: 2000px) {        
-    td#adjust {
-        padding-bottom: 24px;
-    }
-    table#first {
-	padding-bottom: 13px;
-	}
-	input {
-	width: 239px;
-	}
-}
-
-</style>
 </head>
+
 <body>
+
 <marquee><h6>copyright(c) 2015 RTCstudios</h6></marquee>
 <br><marquee direction="down"><hr></marquee>
 <h1>Hi. I'm Ravi.</h1><marquee direction="up"><hr></marquee>
@@ -193,28 +21,13 @@ do my Masters preferably in the U.S. In these four years, I wish to learn more a
 NOTE: That copyright above is obviously fake :p<p/>
 <br><br><br><br><br><br><br>
 <a href="#calc">Goto calculator</a><br><br><br><br><br>
-<script>
-function call()
-{
-	var k=document.getElementById("input").value;
-    document.getElementById("res").value=eval(k);
 
-} 
-function val(n){
-	var k=document.getElementById("input").value;
-	if(n=="del")
-{ 
- document.getElementById("input").value = k.substr(0 , k.length-1);
-}
-
-else
-{document.getElementById("input").value+=n;}
-
-}</script>
 <br><br><br><a name="calc"><hr class="hr"></a><br><br><h3>Lollipop Calculator</h3><br><br><br>
 <div class="center">    
-	<div><input type="text" id="input"><br>
-	<input type="text" id="res"></div>
+	<div>
+	<input type="text" id="input"><br>
+	<input type="text" id="res">
+	</div>
 	<table style="float: left;" id="first">
 
 		<tr>
@@ -250,7 +63,8 @@ else
 			<td id="one" onclick="call();"><font size=5>=</td>
 			
 	    </tr>
-    </table>    
+    
+	</table>    
 	<table id="second" style="display: inline-block;" id="two">
 	<tr><td id="height" onclick="val('del');"><font size=1>DEL</td></tr>
 	<tr><td id="two" onclick="val('/');">&divide</td></tr>
@@ -258,8 +72,9 @@ else
 	<tr><td id="two" onclick="val('-');">-</td></tr>
 	<tr><td id="adjust" onclick="val('+');">+</td></tr>
 	</table>    	
-<br><br><br><br><br><br><br>
-</div>	
 
+	<br><br><br><br><br><br><br>
+
+</div>	
 </body>
 </html>
