@@ -118,13 +118,13 @@ background-color:#d3d3d3;
 
 @media screen and (max-width: 800px) {  
     td#adjust {
-        padding-bottom: 24px;
+        padding-bottom: 22px;
     }
 	table#first {
 	padding-bottom: 13px;
 	}
 	input {
-	width: 240px;
+	width: 238px;
 	}
 }
 
