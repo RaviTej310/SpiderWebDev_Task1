@@ -118,13 +118,13 @@ background-color:#d3d3d3;
 
 @media screen and (max-width: 800px) {  
     td#adjust {
-        padding-bottom: 26px;
+        padding-bottom: 24px;
     }
 	table#first {
 	padding-bottom: 13px;
 	}
 	input {
-	width: 242px;
+	width: 240px;
 	}
 }
 
@@ -136,7 +136,7 @@ background-color:#d3d3d3;
 	padding-bottom: 13px;
 	}
 	input {
-	width: 240px;
+	width: 239px;
 	}
 }
 @media screen and (min-width: 1300px) and (max-width: 2000px) {        
