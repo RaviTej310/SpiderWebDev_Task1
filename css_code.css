@@ -118,7 +118,7 @@ background-color:#d3d3d3;
 
 @media screen and (max-width: 800px) {  
     td#adjust {
-        padding-bottom: 23px;
+        padding-bottom: 25px;
     }
 	table#first {
 	padding-bottom: 13px;
